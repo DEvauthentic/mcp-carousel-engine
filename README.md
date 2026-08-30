@@ -1,4 +1,4 @@
-# 🌟 MCP Carousel Engine
+# MCP Carousel Engine
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 **The Professional Model Context Protocol (MCP) Server for High-End 4:5 Vertical Social Carousels.**  
 *Designed and engineered by Said KOMI (Ingénieur Réseaux et Système).*
 
-[Fonctionnalités](#-fonctionnalités-phares) •
+[Aperçu Visuel](#-aperçu-visuel--showcase) •
 [Règles d'Or](#-les-5-règles-dor-du-système) •
 [Installation](#-installation--configuration) •
 [Outils MCP](#-outils-mcp-exposés) •
@@ -22,7 +22,7 @@
 
 ---
 
-## 📸 Aperçu Visuel / Showcase
+## [▸] Aperçu Visuel / Showcase
 
 Voici un aperçu d'un carrousel réel de 6 slides produit avec **`mcp-carousel-engine`** sur le sujet **« Amazon VPC Architecture »** (*Thème Orange AWS & Vert Émeraude, Auteur : Said KOMI*) :
 
@@ -53,9 +53,10 @@ Voici un aperçu d'un carrousel réel de 6 slides produit avec **`mcp-carousel-e
 
 ---
 
-## 🎯 Pourquoi ce Serveur MCP ?
+## [▸] Pourquoi ce Serveur MCP ?
 
 Les carrousels sur les réseaux professionnels (**LinkedIn, Facebook, Instagram**) souffrent souvent de trois problèmes majeurs générés par les outils d'IA traditionnels :
+
 1. **Le "Template AI Slop" :** Des mises en page génériques, plates, saturées d'émojis enfantins et sans identité visuelle.
 2. **Le Débordement & Décalage CSS :** L'utilisation de librairies comme `html2canvas` qui cassent les masques de texte dégradés, tronquent les cartes et produisent des espaces blancs disproportionnés.
 3. **Le Cadrage Défectueux des Photos :** Des avatars coupés au niveau du front ou des cheveux en haut de carte.
@@ -64,24 +65,24 @@ Les carrousels sur les réseaux professionnels (**LinkedIn, Facebook, Instagram*
 
 ---
 
-## 🛡️ Les 5 Règles d'Or du Système
+## [▸] Les 5 Règles d'Or du Système
 
 | N° | Règle | Spécification Technique | Rationale |
 | :---: | :--- | :--- | :--- |
 | **01** | **Ratio 4:5 Vertical Strict** | Canvas fixé à **$1080\text{ px} \times 1350\text{ px}$** avec `overflow: hidden` et `box-sizing: border-box`. | Format d'engagement maximal sur mobile, élimine tout défilement parasite. |
-| **02** | **Zéro Émoji (Strict Policy)** | Interdiction totale des émojis (`🚀, 🔥, 💻`). Utilisation exclusive de glyphes (`::`, `//`, `[+]`, `[✓]`, `->`). | Confère un look d'ingénierie moderne, sobre et hautement professionnel. |
+| **02** | **Zéro Émoji (Strict Policy)** | Interdiction totale des émojis. Utilisation exclusive de glyphes (`::`, `//`, `[+]`, `[✓]`, `->`). | Confère un look d'ingénierie moderne, sobre et hautement professionnel. |
 | **03** | **Éclairage 3D Volumétrique** | Dégradés radiaux multi-points (`radial-gradient(circle at 35% 30%, ...)`) avec halo coloré diffus. | Crée une illusion de profondeur tridimensionnelle sans nécessiter de moteur WebGL lourd. |
 | **04** | **Cadrage Zéro Coupure de l'Avatar** | Ancrage optique calibré (`object-position: center 8%`) dans un médaillon à double anneau dégradé. | Garantit que le visage, le front et les cheveux de l'auteur sont toujours parfaitement visibles. |
 | **05** | **Rendu Chromium Natif** | Compilation headless via Chromium (Remotion Stills) à échelle 1:1. | Élimine à 100% les décalages de rendu et les pertes de calques CSS. |
 
 ---
 
-## 🚀 Installation & Configuration
+## [▸] Installation & Configuration
 
 ### 1. Cloner et compiler le serveur
 
 ```bash
-git clone https://github.com/your-username/mcp-carousel-engine.git
+git clone https://github.com/DEvauthentic/mcp-carousel-engine.git
 cd mcp-carousel-engine
 npm install
 npm run build
@@ -115,7 +116,7 @@ npm run build
 
 ---
 
-## 🧰 Outils MCP Exposés
+## [▸] Outils MCP Exposés
 
 ### 1. `get_design_rules`
 Retourne à l'agent l'ensemble des règles typographiques, de ratio et de contraste pour cadrer sa génération de contenu.
@@ -136,7 +137,7 @@ Prend un fichier ou objet JSON décrivant les slides et génère :
 
 ---
 
-## 🧩 Boîte à Outils de Primitives React
+## [▸] Boîte à Outils de Primitives React
 
 Les agents peuvent assembler ces composants en toute liberté :
 
@@ -171,7 +172,7 @@ export const Slide01 = () => (
 
 ---
 
-## 📂 Exemples Prêts à l'Emploi
+## [▸] Exemples Prêts à l'Emploi
 
 Deux exemples complets et testés sont inclus dans le dossier [`examples/`](./examples/) :
 1. [`examples/aws-vpc-carousel.json`](./examples/aws-vpc-carousel.json) — Carrousel d'architecture réseau AWS VPC (6 slides).
@@ -179,7 +180,7 @@ Deux exemples complets et testés sont inclus dans le dossier [`examples/`](./ex
 
 ---
 
-## 💡 Exemple de Prompt pour votre Agent IA
+## [▸] Exemple de Prompt pour votre Agent IA
 
 Une fois le serveur MCP connecté, il vous suffit de demander à votre agent :
 
@@ -189,11 +190,11 @@ L'agent va :
 1. Consulter `get_design_rules` et `list_creative_archetypes`.
 2. Rédiger les textes percutants selon la structure de storytelling validée.
 3. Appeler `render_carousel_project`.
-4. Livrer les fichiers PNG $1080 \times 1350\text{ px}$ et le visualiseur web interactif !
+4. Livrer les fichiers PNG $1080 \times 1350\text{ px}$ et le visualiseur web interactif.
 
 ---
 
-## 👤 Auteur & Licence
+## [▸] Auteur & Licence
 
 * **Concepteur & Architecte :** **Said KOMI**  
 * **Rôle :** Ingénieur Réseaux et Système  
