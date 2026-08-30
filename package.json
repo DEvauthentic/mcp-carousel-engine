@@ -1,0 +1,42 @@
+{
+  "name": "mcp-carousel-engine",
+  "version": "1.0.0",
+  "description": "Professional Model Context Protocol (MCP) server for generating ultra-creative, non-overflowing 4:5 vertical carousels with native Chromium rendering.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-carousel-engine": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "carousel",
+    "design",
+    "remotion",
+    "chromium",
+    "social-media",
+    "neo-geometric",
+    "creative-ai"
+  ],
+  "author": "Said KOMI <Ingénieur Réseaux et Système>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.260",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

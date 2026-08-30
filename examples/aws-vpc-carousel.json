@@ -1,0 +1,73 @@
+{
+  "topic": "Amazon VPC Architecture",
+  "themeColor": "orange",
+  "author": {
+    "name": "Said KOMI",
+    "title": "Ingénieur Réseaux & Système",
+    "handle": "@saidkomi",
+    "avatarPath": "./photo-auteur.png"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title1": "amazon",
+      "title2": "vpc",
+      "pillTag": "la forteresse du cloud"
+    },
+    {
+      "type": "card",
+      "boldTitle": "espace",
+      "thinTitle": "privé",
+      "description": "Votre propre data center virtuel dédié et isolé au sein du cloud mondial d'Amazon Web Services.",
+      "bulletPoints": [
+        "Isolation logique & cryptographique complète",
+        "Contrôle total de vos plages d'adresses IP privées",
+        "Zéro communication extérieure non autorisée"
+      ],
+      "pillTag": "cidr-block :: 10.0.0.0/16"
+    },
+    {
+      "type": "card",
+      "boldTitle": "subnets",
+      "thinTitle": "division",
+      "description": "Séparer les services exposés au monde de vos données métier hautement confidentielles.",
+      "bulletPoints": [
+        "Subnet Public : Load Balancers & passerelles web",
+        "Subnet Privé : Bases de données & logique isolées",
+        "Redondance Multi-AZ : Haute disponibilité native"
+      ],
+      "pillTag": "architecture :: public-and-private"
+    },
+    {
+      "type": "card",
+      "boldTitle": "passerelles",
+      "thinTitle": "routage",
+      "description": "Piloter les flux sortants sans jamais exposer vos serveurs internes sur Internet.",
+      "bulletPoints": [
+        "Internet Gateway (IGW) : La porte d'accès du public",
+        "NAT Gateway : Sortie sécurisée pour les MAJ privées",
+        "Route Tables : Aiguillage millimétré paquet par paquet"
+      ],
+      "pillTag": "traffic-control :: igw-and-nat"
+    },
+    {
+      "type": "card",
+      "boldTitle": "sécurité",
+      "thinTitle": "blindage",
+      "description": "La défense en profondeur pour bloquer 100% des accès et flux réseau illégitimes.",
+      "bulletPoints": [
+        "Security Groups : Pare-feu avec état (Stateful)",
+        "Network ACLs : Filtre sans état (Stateless)",
+        "Moindre privilège : Ports fermés par défaut"
+      ],
+      "pillTag": "defense :: zero-trust-firewall"
+    },
+    {
+      "type": "signature",
+      "title1": "suivez",
+      "title2": "moi",
+      "description": "Pour des analyses d'infrastructure, de routage et de sécurité réseau. Enregistrez ce post & rejoignez la communauté.",
+      "ctaText": "S'ABONNER AU PROFIL [ ➔ ]"
+    }
+  ]
+}

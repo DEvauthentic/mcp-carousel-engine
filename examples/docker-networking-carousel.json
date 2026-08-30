@@ -1,0 +1,73 @@
+{
+  "topic": "Docker Networking Deep Dive",
+  "themeColor": "cyan",
+  "author": {
+    "name": "Said KOMI",
+    "title": "Ingénieur Réseaux & Système",
+    "handle": "@saidkomi",
+    "avatarPath": "./photo-auteur.png"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "title1": "docker",
+      "title2": "network",
+      "pillTag": "les 4 modes fondamentaux"
+    },
+    {
+      "type": "card",
+      "boldTitle": "bridge",
+      "thinTitle": "défaut",
+      "description": "Le réseau privé par défaut créant un commutateur virtuel logiciel (docker0).",
+      "bulletPoints": [
+        "Isolation automatique entre conteneurs non reliés",
+        "Résolution DNS automatique sur les réseaux personnalisés",
+        "Idéal pour les applications web multi-conteneurs"
+      ],
+      "pillTag": "driver :: bridge-isolation"
+    },
+    {
+      "type": "card",
+      "boldTitle": "host",
+      "thinTitle": "direct",
+      "description": "Supprime l'isolation réseau : le conteneur partage directement la pile réseau de l'hôte.",
+      "bulletPoints": [
+        "Zéro overhead de translation d'adresses (NAT)",
+        "Performances réseau brutes maximales",
+        "Attention aux collisions de ports sur l'hôte"
+      ],
+      "pillTag": "driver :: host-zero-latency"
+    },
+    {
+      "type": "card",
+      "boldTitle": "macvlan",
+      "thinTitle": "physique",
+      "description": "Assigne une adresse MAC physique dédiée à chaque conteneur sur votre LAN.",
+      "bulletPoints": [
+        "Le conteneur apparaît comme un équipement physique réel",
+        "Routage direct via le switch réseau de l'entreprise",
+        "Indispensable pour les applications legacy"
+      ],
+      "pillTag": "driver :: macvlan-hardware"
+    },
+    {
+      "type": "card",
+      "boldTitle": "overlay",
+      "thinTitle": "cluster",
+      "description": "Le réseau multi-hôtes pour connecter des conteneurs répartis sur plusieurs serveurs physiques.",
+      "bulletPoints": [
+        "Encapsulation VXLAN transparente",
+        "Chiffrement matériel natif IPSec activable",
+        "Pilier de Docker Swarm et Kubernetes"
+      ],
+      "pillTag": "driver :: overlay-vxlan-mesh"
+    },
+    {
+      "type": "signature",
+      "title1": "suivez",
+      "title2": "moi",
+      "description": "Pour des analyses d'infrastructure, de conteneurisation et de routage réseau. Enregistrez ce post & rejoignez la communauté.",
+      "ctaText": "S'ABONNER AU PROFIL [ ➔ ]"
+    }
+  ]
+}
