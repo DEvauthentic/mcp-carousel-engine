@@ -1,7 +1,7 @@
 {
   "name": "mcp-carousel-engine",
-  "version": "3.3.0",
-  "description": "Professional Model Context Protocol (MCP) server for high-authority 4:5 (1080x1350) vertical technical carousels, SVG charts, 5 theme presets, native LinkedIn PDF export, and automated Headless Chromium rendering.",
+  "version": "3.4.0",
+  "description": "Professional 100% Free & Open-Source Model Context Protocol (MCP) server for high-authority 4:5 (1080x1350) vertical technical carousels, SVG charts, 5 theme presets, native LinkedIn PDF export, and automated Headless Chromium rendering.",
   "main": "dist/index.js",
   "type": "module",
   "bin": {

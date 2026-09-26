@@ -247,7 +247,7 @@ function renderNeoGeometricHtml(params: any, typo: any, pattern: SlideLayoutPatt
 
     <div class="top-bar">
       <div class="topic-tag"><span>//</span><span>${displayTopic}</span></div>
-      <div class="author-handle">${author.handle || '@saidkomi.cloud'}</div>
+      ${author?.handle ? `<div class="author-handle">${author.handle}</div>` : ''}
     </div>
 
     <!-- Cover Content -->
@@ -279,7 +279,7 @@ function renderNeoGeometricHtml(params: any, typo: any, pattern: SlideLayoutPatt
 
     <div class="top-bar">
       <div class="topic-tag"><span>//</span><span>${displayTopic}</span></div>
-      <div class="author-handle">${author.handle || '@saidkomi'}</div>
+      ${author?.handle ? `<div class="author-handle">${author.handle}</div>` : ''}
     </div>
 
     ${isSignature ? `

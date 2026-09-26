@@ -2,13 +2,9 @@ startCommand:
   type: stdio
   configSchema:
     type: object
-    properties:
-      licenseKey:
-        type: string
-        description: "Optional Pro License Key (from polar.sh/saidkomi) to remove watermark and unlock pro features"
+    properties: {}
   commandFunction: |-
     (config) => ({
       command: 'npx',
-      args: ['-y', 'mcp-carousel-engine'],
-      env: config.licenseKey ? { CAROUSEL_LICENSE_KEY: config.licenseKey } : {}
+      args: ['-y', 'mcp-carousel-engine']
     })
