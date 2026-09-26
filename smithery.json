@@ -1,0 +1,22 @@
+{
+  "$schema": "https://smithery.ai/docs/config-schema.json",
+  "startCommand": {
+    "type": "stdio",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "CAROUSEL_LICENSE_KEY": {
+          "type": "string",
+          "description": "Optional Pro License Key (e.g. from polar.sh/saidkomi) to remove the viral watermark badge and enable white-label rendering."
+        },
+        "CAROUSEL_STORE_URL": {
+          "type": "string",
+          "description": "Custom store URL for Pro upgrade (defaults to https://polar.sh/saidkomi)",
+          "default": "https://polar.sh/saidkomi"
+        }
+      }
+    },
+    "command": "npx",
+    "args": ["-y", "mcp-carousel-engine"]
+  }
+}

@@ -4,3 +4,8 @@ dist/
 .DS_Store
 exports/
 .env
+test-exports/
+test-charts-output/
+scratch/
+*.mjs
+assets/health-demo/

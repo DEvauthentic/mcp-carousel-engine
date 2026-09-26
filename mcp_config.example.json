@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-config.json",
+  "description": "MCP Carousel Engine v3.3 Configuration Examples for AI Clients",
+  "configurations": {
+    "antigravity_workspace": {
+      "file": ".agents/mcp_config.json",
+      "config": {
+        "mcpServers": {
+          "mcp-carousel-engine": {
+            "command": "node",
+            "args": [
+              "c:/VEILLE TECHNOLOGIQUE/laboratoires/agentic-google/mcp-carousel-engine/dist/index.js"
+            ],
+            "env": {
+              "NODE_ENV": "production"
+            }
+          }
+        }
+      }
+    },
+    "claude_desktop": {
+      "file": "%APPDATA%\\Claude\\claude_desktop_config.json (Windows) or ~/Library/Application Support/Claude/claude_desktop_config.json (macOS)",
+      "config": {
+        "mcpServers": {
+          "carousel-engine": {
+            "command": "node",
+            "args": [
+              "c:\\VEILLE TECHNOLOGIQUE\\laboratoires\\agentic-google\\mcp-carousel-engine\\dist\\index.js"
+            ]
+          }
+        }
+      }
+    },
+    "cursor": {
+      "file": ".cursor/mcp.json",
+      "config": {
+        "mcpServers": {
+          "carousel-engine": {
+            "command": "node",
+            "args": [
+              "c:/VEILLE TECHNOLOGIQUE/laboratoires/agentic-google/mcp-carousel-engine/dist/index.js"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
